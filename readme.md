@@ -6,19 +6,20 @@
 - Localization system using csv file
 - Mobile ready
 
-##Requirements
+## Requirements
 - Unity Engine (Any version should work) [Tested on 2020.3.14f1]
 - TextMeshPro package
 - Something to edit CSV files
 
-###How to use
-####Change language
+### How to use
+
+#### Change language
 ```c#
 SetText(Lang lang); or SetText(int index);
 ```
 To change language defined in the enum **Lang**.
 
-####Add Language
+#### Add Language
 ```c#
     //Language enum
     public enum Lang
