@@ -37,5 +37,5 @@ Add your new language in the enum, and create a new Dictionary corresponding to 
 
 Do not forget to add the translations in the CSV file too.
 
-### Download
+## Download
 Last Unity package: [Here](https://github.com/StephenGrosjean/Unity-Localization-System/raw/master/Builds/LocalizationSystem.unitypackage)
