@@ -5,10 +5,8 @@
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Bb]uild/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
-
 /[Ss]witchIL2CPPCache/
 /[Ss]witchIL2CPPStats/
 
@@ -57,7 +55,7 @@ sysinfo.txt
 
 # Builds
 *.apk
-*.unitypackage
+
 
 # Crashlytics generated file
 crashlytics-build.properties
