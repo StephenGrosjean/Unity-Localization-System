@@ -38,6 +38,3 @@ To change language defined in the enum **Lang**.
 Add your new language in the enum, and create a new Dictionary corresponding to the language.
 
 Do not forget to add the translations in the CSV file too.
-
-## Download
-Lastest Unity package: [Here](https://github.com/StephenGrosjean/Unity-Localization-System/raw/master/Builds/LocalizationSystem.unitypackage)
