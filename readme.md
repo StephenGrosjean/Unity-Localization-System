@@ -15,7 +15,9 @@
 
 #### Change language
 ```c#
-SetText(Lang lang); or SetText(int index);
+LocalizationManager.instance.SetLanguage(Lang language);
+or
+LocalizationManager.instance.SetLanguage(int index);
 ```
 To change language defined in the enum **Lang**.
 
