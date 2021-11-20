@@ -11,9 +11,9 @@
 - TextMeshPro package
 - Something to edit CSV files
 
-### How to use
+## How to use
 
-#### Change language
+### Change language
 ```c#
 LocalizationManager.instance.SetLanguage(Lang language);
 or
@@ -21,7 +21,7 @@ LocalizationManager.instance.SetLanguage(int index);
 ```
 To change language defined in the enum **Lang**.
 
-#### Add Language
+### Add Language
 ```c#
     //Language enum
     public enum Lang
