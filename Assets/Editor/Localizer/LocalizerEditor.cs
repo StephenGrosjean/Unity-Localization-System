@@ -24,6 +24,8 @@ SOFTWARE.
 using UnityEngine;
 using UnityEditor;
 using TMPro;
+using UnityEditor.SceneManagement;
+
 public class LocalizerEditor : EditorWindow
 {
     [MenuItem("Tools/Localizer")]
@@ -36,6 +38,7 @@ public class LocalizerEditor : EditorWindow
             if (Selection.activeTransform != null) {
                 if(Selection.activeTransform.gameObject.GetComponent<Localizable>() == null) {
                     if(Selection.activeTransform.gameObject.GetComponent<TextMeshProUGUI>() != null) {
+                        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
                         Selection.activeTransform.gameObject.AddComponent(typeof(Localizable));
                     }
                     else {
@@ -51,6 +54,8 @@ public class LocalizerEditor : EditorWindow
         GUILayout.Label("Create a manager in the Init scene");
         if (GUILayout.Button("Create Manager")) {
             GameObject manager = new GameObject("LocalizationManager");
+            EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+            Undo.RegisterCreatedObjectUndo(manager, "Undo instantiated " + manager.name);
             manager.AddComponent(typeof(LocalizationManager));
         }
     }
