@@ -1,7 +1,7 @@
 /*
  MIT License
 
-Copyright (c) 2021 Stephen Grosjean
+Copyright (c) 2022 Stephen Grosjean
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,20 +22,22 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
-public class Localizable : MonoBehaviour
+using UnityEngine;
+
+[RequireComponent(typeof(TextMeshProUGUI))]
+public class LocalizedItem : MonoBehaviour
 {
-    [HideInInspector] public TextMeshProUGUI textComponent;
-    [HideInInspector] public string baseKey = "";
-    public void Init() {
-        textComponent = GetComponent<TextMeshProUGUI>();
-        FindBaseKey();
+    private TextMeshProUGUI m_text;
+    [SerializeField] private string m_key;
+    private void Start() {
+        m_text = GetComponent<TextMeshProUGUI>();
+        Localizer.Instance.OnLanguageChange.AddListener(UpdateText);
     }
 
-    void FindBaseKey() {
-        if (baseKey == "") {
-            baseKey = textComponent.text;
-        }
+    public void UpdateText() {
+        m_text.text = Localizer.Instance.GetWord(m_key);
     }
 }

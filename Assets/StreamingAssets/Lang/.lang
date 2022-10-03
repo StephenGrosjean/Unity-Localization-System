@@ -1,0 +1,22 @@
+{
+  "EN": {
+    "Lang_name": "English",
+    "Test_Text": "Bonjour"
+  },
+  "ES": {
+    "Lang_name": "Español",
+    "Test_Text": "Hola"
+  },
+  "IT": {
+    "Lang_name": "Italiano",
+    "Test_Text": "Ciao"
+  },
+  "FR": {
+    "Lang_name": "Français",
+    "Test_Text": "Bonjour"
+  },
+  "DE": {
+    "Lang_name": "Deutsh",
+    "Test_Text": "Hallo"
+  }
+}
