@@ -9,7 +9,7 @@
 ## Requirements
 - Unity Engine (Any version should work) [Tested on 2021.3.1f1]
 - TextMeshPro package
-- Newtonsoft Json (com.unity.nuget.newtons-json) >= V 2.0.2
+- Newtonsoft Json (com.unity.nuget.newtonsoft-json) >= V 2.0.2
 - Something to edit JSON Files (Optional)
 
 ## How to use
